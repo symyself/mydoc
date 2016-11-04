@@ -3,15 +3,10 @@ Welcome to songyang's documentation!
 
 .. toctree::
    :maxdepth: 1
-   :caption: Contents:
+   :caption: 目录
 
-   linux/linux
-   nginx/nginx
-   zabbix/zabbix
-   python/python 
-   mysql/mysql
+   ops/index
    time_axis
-   others
 
 Indices and tables
 ==================
