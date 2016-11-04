@@ -1,0 +1,24 @@
+#echo $PS1
+#
+#ifconfig 
+eth0      Link encap:Ethernet  HWaddr 00:0C:29:EC:B3:A7  
+          inet addr:172.16.1.10  Bcast:172.16.1.255  Mask:255.255.255.0
+          inet6 addr: fe80::20c:29ff:feec:b3a7/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:803320 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:686656 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:190290983 (181.4 MiB)  TX bytes:120969374 (115.3 MiB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:3378 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:3378 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:1346483 (1.2 MiB)  TX bytes:1346483 (1.2 MiB)
+
+#ifconfig  | /bin/grep -Po "(?<=addr:)[0-9.]*" | /bin/grep -v '127.0.0.1'
+172.16.1.10
+#
