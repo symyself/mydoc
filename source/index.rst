@@ -7,6 +7,7 @@ Welcome to songyang's documentation!
 
    ops/index
    time_axis
+   links
 
 .. Indices and tables
    ==================

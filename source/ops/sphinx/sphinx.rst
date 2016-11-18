@@ -99,7 +99,7 @@ Or automatically numbered:
 5. 警告
 -------------------------
 .. warning::
-   这是一台警告消息:XXXXXXXXXXXXXXX
+   这是一条警告消息:XXXXXXXXXXXXXXX
 
 6. 表格
 ----------------------
