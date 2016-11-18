@@ -1,7 +1,5 @@
-链接
+导航
 ------------------
-- NEWS: ifeng_ huanqiu_ bbc_
-- qq_ `QQ <http://www.qq.com>`_ `baidu <http://www.baidu.com>`_
 
 +--------+-----------+-----------+------+
 | blog   | 51cto_    | itpub_    | cu_  |
