@@ -1,7 +1,8 @@
 .. _top:
+
 .. _sphinx:
 
-sphinx
+starting sphinx
 ===============
 学习reStructuredText,使用sphinx写文档，尝试各个功能
 

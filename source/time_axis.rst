@@ -3,6 +3,11 @@
 
 .. - 2016-11-04 第一篇文档 `sphinx </ops/sphinx/sphinx.html#>`_
 
+2016-12
+##################
+- 2016-12-20 rsync_ssh :ref:`rsync_ssh`
+- 2016-12-20 grep_color :ref:`grep_color`
+
 2016-11
 ##########
 - 2016-11-04 第一篇文档 :ref:`sphinx`

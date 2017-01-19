@@ -114,7 +114,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../rsync/index.html">rsync</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../rsync/index.html#id1">3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../rsync/index.html#rsync-ssh">1 rsync ssh</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../rsync/index.html#id2">2</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../rsync/index.html#id3">1</a></li>
 </ul>
@@ -146,16 +146,16 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../others.html">others</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../sphinx/sphinx.html">sphinx</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id2">1. 标题</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id3">2. 文本</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id4">3. 列表</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id5">4. 图片</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id6">5. 警告</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id7">6. 表格</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id8">7. 超链接</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id10">8. 词汇表</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id11">9. 代码高亮</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../sphinx/sphinx.html">starting sphinx</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id1">1. 标题</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id2">2. 文本</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id3">3. 列表</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id4">4. 图片</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id5">5. 警告</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id6">6. 表格</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id7">7. 超链接</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id9">8. 词汇表</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id10">9. 代码高亮</a></li>
 </ul>
 </li>
 </ul>
@@ -163,8 +163,9 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../time_axis.html">时间轴</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../time_axis.html#id2">2016-11</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../time_axis.html#id3">2016-10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../time_axis.html#id2">2016-12</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../time_axis.html#id3">2016-11</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../time_axis.html#id4">2016-10</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../links.html">导航</a></li>
@@ -223,6 +224,8 @@
 <h2>grep<a class="headerlink" href="#grep" title="永久链接至标题">¶</a></h2>
 <div class="section" id="grep-po">
 <h3>grep -Po<a class="headerlink" href="#grep-po" title="永久链接至标题">¶</a></h3>
+<div class="section" id="id1">
+<h4>零宽断言<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h4>
 <div class="highlight-bash"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -272,6 +275,78 @@ lo        Link encap:Local Loopback
 <span class="c1">#</span>
 </pre></div>
 </td></tr></table></div>
+</div>
+<div class="section" id="grep-color">
+<span id="id2"></span><h4>grep匹配颜色设置<a class="headerlink" href="#grep-color" title="永久链接至标题">¶</a></h4>
+<p>export GREP_COLOR=&#8217;A;B&#8217;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="13%" />
+<col width="87%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">A</th>
+<th class="head">效果</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0</td>
+<td>关闭所有属性</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>高亮</td>
+</tr>
+<tr class="row-even"><td>4</td>
+<td>下划线</td>
+</tr>
+<tr class="row-odd"><td>5</td>
+<td>闪烁</td>
+</tr>
+<tr class="row-even"><td>7</td>
+<td>反显</td>
+</tr>
+<tr class="row-odd"><td>8</td>
+<td>消隐</td>
+</tr>
+</tbody>
+</table>
+<p>B 30-37为前景色，40-47为背景色</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">B</th>
+<th class="head">颜色</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>30 or 40</td>
+<td>black</td>
+</tr>
+<tr class="row-odd"><td>31 or 41</td>
+<td>red</td>
+</tr>
+<tr class="row-even"><td>32 or 42</td>
+<td>green</td>
+</tr>
+<tr class="row-odd"><td>33 or 43</td>
+<td>yellow</td>
+</tr>
+<tr class="row-even"><td>34 or 44</td>
+<td>blue</td>
+</tr>
+<tr class="row-odd"><td>36 or 46</td>
+<td>cyan</td>
+</tr>
+<tr class="row-even"><td>37 or 47</td>
+<td>white</td>
+</tr>
+</tbody>
+</table>
+<a class="reference internal image-reference" href="../../../_images/grep_color.png"><img alt="alternate text" class="align-center" src="../../../_images/grep_color.png" style="width: 727.2px; height: 171.2px;" /></a>
+</div>
 </div>
 </div>
 <div class="section" id="sed">

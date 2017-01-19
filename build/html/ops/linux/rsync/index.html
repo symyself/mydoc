@@ -114,7 +114,7 @@
 </ul>
 </li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">rsync</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id1">3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rsync-ssh">1 rsync ssh</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id2">2</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id3">1</a></li>
 </ul>
@@ -146,16 +146,16 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../others.html">others</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../sphinx/sphinx.html">sphinx</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id2">1. 标题</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id3">2. 文本</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id4">3. 列表</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id5">4. 图片</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id6">5. 警告</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id7">6. 表格</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id8">7. 超链接</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id10">8. 词汇表</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id11">9. 代码高亮</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../sphinx/sphinx.html">starting sphinx</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id1">1. 标题</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id2">2. 文本</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id3">3. 列表</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id4">4. 图片</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id5">5. 警告</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id6">6. 表格</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id7">7. 超链接</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id9">8. 词汇表</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sphinx/sphinx.html#id10">9. 代码高亮</a></li>
 </ul>
 </li>
 </ul>
@@ -163,8 +163,9 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../time_axis.html">时间轴</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../time_axis.html#id2">2016-11</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../time_axis.html#id3">2016-10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../time_axis.html#id2">2016-12</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../time_axis.html#id3">2016-11</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../time_axis.html#id4">2016-10</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../links.html">导航</a></li>
@@ -216,8 +217,14 @@
             
   <div class="section" id="rsync">
 <h1>rsync<a class="headerlink" href="#rsync" title="永久链接至标题">¶</a></h1>
-<div class="section" id="id1">
-<h2>3<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<div class="section" id="rsync-ssh">
+<span id="id1"></span><h2>1 rsync ssh<a class="headerlink" href="#rsync-ssh" title="永久链接至标题">¶</a></h2>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>rsync -av --delete <span class="se">\</span>
+--exclude-from<span class="o">=</span>exclude.list <span class="se">\</span>
+--log-file<span class="o">=</span><span class="si">${</span><span class="nv">base_dir</span><span class="si">}</span>/.rsync.log <span class="se">\</span>
+-e <span class="s1">&#39;ssh -i /home/yang.song/.ssh/id_rsa&#39;</span>  songy@<span class="si">${</span><span class="nv">ip</span><span class="si">}</span>:/dir/aa /localdir/
+</pre></div>
+</div>
 </div>
 <div class="section" id="id2">
 <h2>2<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
