@@ -252,14 +252,14 @@
 24</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">#echo $PS1</span>
 <span class="c1">#</span>
 <span class="hll"><span class="c1">#ifconfig </span>
-</span>eth0      Link encap:Ethernet  HWaddr 00:0C:29:EC:B3:A7  
+</span>eth0      Link encap:Ethernet  HWaddr <span class="m">00</span>:0C:29:EC:B3:A7  
           inet addr:172.16.1.10  Bcast:172.16.1.255  Mask:255.255.255.0
           inet6 addr: fe80::20c:29ff:feec:b3a7/64 Scope:Link
           UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
           RX packets:803320 errors:0 dropped:0 overruns:0 frame:0
           TX packets:686656 errors:0 dropped:0 overruns:0 carrier:0
           collisions:0 txqueuelen:1000 
-          RX bytes:190290983 <span class="o">(</span>181.4 MiB<span class="o">)</span>  TX bytes:120969374 <span class="o">(</span>115.3 MiB<span class="o">)</span>
+          RX bytes:190290983 <span class="o">(</span><span class="m">181</span>.4 MiB<span class="o">)</span>  TX bytes:120969374 <span class="o">(</span><span class="m">115</span>.3 MiB<span class="o">)</span>
 
 lo        Link encap:Local Loopback  
           inet addr:127.0.0.1  Mask:255.0.0.0
@@ -268,10 +268,10 @@ lo        Link encap:Local Loopback
           RX packets:3378 errors:0 dropped:0 overruns:0 frame:0
           TX packets:3378 errors:0 dropped:0 overruns:0 carrier:0
           collisions:0 txqueuelen:0 
-          RX bytes:1346483 <span class="o">(</span>1.2 MiB<span class="o">)</span>  TX bytes:1346483 <span class="o">(</span>1.2 MiB<span class="o">)</span>
+          RX bytes:1346483 <span class="o">(</span><span class="m">1</span>.2 MiB<span class="o">)</span>  TX bytes:1346483 <span class="o">(</span><span class="m">1</span>.2 MiB<span class="o">)</span>
 
 <span class="hll"><span class="c1">#ifconfig  | /bin/grep -Po &quot;(?&lt;=addr:)[0-9.]*&quot; | /bin/grep -v &#39;127.0.0.1&#39;</span>
-</span>172.16.1.10
+</span><span class="m">172</span>.16.1.10
 <span class="c1">#</span>
 </pre></div>
 </td></tr></table></div>
@@ -376,7 +376,7 @@ lo        Link encap:Local Loopback
 
   <div role="contentinfo">
     <p>
-        &copy; 版权所有 2016, songyang.
+        &copy; Copyright 2016, songyang.
 
     </p>
   </div>
